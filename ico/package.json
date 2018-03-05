@@ -1,0 +1,29 @@
+{
+  "name": "ico",
+  "version": "1.0.0",
+  "main": "truffle.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:coverage": "./node_modules/.bin/solidity-coverage",
+    "test:static": "truffle compile && myth --truffle"
+  },
+  "keywords": [],
+  "author": "roylai <roy.la@infocorp.io>",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-bignumber": "^2.0.2",
+    "python2": "0.0.1",
+    "truffle": "^4.0.6",
+    "truffle-hdwallet-provider": "0.0.3",
+    "truffle-wallet-provider": "0.0.5"
+  },
+  "devDependencies": {
+    "solidity-coverage": "^0.4.9"
+  }
+}
