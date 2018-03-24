@@ -1,0 +1,708 @@
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.000000000000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433        0.000000000000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Founding Team
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11 - Early Supporters
+12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000           0.000000000000000000 Account #12 - Treasury
+13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000           0.000000000000000000 Account #13 - Presale Group
+14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98        0.000000000000000000           0.000000000000000000 Account #17 - Batch 0
+18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f        0.000000000000000000           0.000000000000000000 Account #18 - Batch 1
+19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                                    0.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+
+---------- Deploy Whitelist Contract ----------
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.002658402000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.002658402000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Founding Team
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11 - Early Supporters
+12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000           0.000000000000000000 Account #12 - Treasury
+13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000           0.000000000000000000 Account #13 - Presale Group
+14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98        0.000000000000000000           0.000000000000000000 Account #17 - Batch 0
+18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f        0.000000000000000000           0.000000000000000000 Account #18 - Batch 1
+19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                                    0.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Deploy Whitelist Contract
+whitelistAddress=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272 status=0x1 Success gas=6000000 gasUsed=886134 costETH=0.002658402 costUSD=2.24584459362 @ ETH/USD=844.81 gasPrice=3 gwei block=3811 txIx=0 txId=0xa8bd33098c740d95b330bad4e9f93f2f02a5be50acab93d9cc626876c5b2ef15 @ 1520414870 Wed, 07 Mar 2018 09:27:50 UTC
+whitelistContractAddress=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+whitelist.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+whitelist.primaryOperator=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+whitelist.secondaryOperator=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+whitelist.getWhiteListCount=0
+whitelist.getAllocated(account17)=0 0 ETH
+whitelist.getBatchNumber(account17)=0
+whitelist.isWhiteListed(account17)=false
+whitelist.batchMap(account17)=[false,"0","0"]
+whitelist.batchMap(account18)=[false,"0","0"]
+whitelist.batchMap(account19)=[false,"0","0"]
+whitelist.batchMap(account20)=[false,"0","0"]
+whitelist.batchMap(account21)=[false,"0","0"]
+whitelist.batchMap(account22)=[false,"0","0"]
+whitelist.batchMap(account30)=[false,"0","0"]
+
+---------- Add To Whitelist ----------
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.005997324000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.005997324000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Founding Team
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11 - Early Supporters
+12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000           0.000000000000000000 Account #12 - Treasury
+13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000           0.000000000000000000 Account #13 - Presale Group
+14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98        0.000000000000000000           0.000000000000000000 Account #17 - Batch 0
+18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f        0.000000000000000000           0.000000000000000000 Account #18 - Batch 1
+19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                                    0.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Add To Whitelist
+PASS Add To Whitelist
+whitelist0_1Tx status=0x1 Success gas=1000000 gasUsed=378846 costETH=0.001136538 costUSD=0.96015866778 @ ETH/USD=844.81 gasPrice=3 gwei block=3814 txIx=0 txId=0xcf7c01e5a19fccbcb02a920b674df1c61b77034b8df84391dd70912cad9a7c28 @ 1520414873 Wed, 07 Mar 2018 09:27:53 UTC
+whitelist0_2Tx status=0x1 Success gas=1000000 gasUsed=734128 costETH=0.002202384 costUSD=1.86059602704 @ ETH/USD=844.81 gasPrice=3 gwei block=3815 txIx=0 txId=0x6e1b8037167c1da8e05045586a266b13589078135f8f21aae857db6790506c88 @ 1520414874 Wed, 07 Mar 2018 09:27:54 UTC
+whitelistContractAddress=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+whitelist.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+whitelist.primaryOperator=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+whitelist.secondaryOperator=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+whitelist.getWhiteListCount=15
+whitelist.getAllocated(account17)=10000000000000000000 10 ETH
+whitelist.getBatchNumber(account17)=0
+whitelist.isWhiteListed(account17)=true
+whitelist.batchMap(account17)=[true,"10000000000000000000","0"]
+whitelist.batchMap(account18)=[true,"10000000000000000000","1"]
+whitelist.batchMap(account19)=[true,"10000000000000000000","2"]
+whitelist.batchMap(account20)=[true,"2e+22","3"]
+whitelist.batchMap(account21)=[true,"10000000000000000000","1"]
+whitelist.batchMap(account22)=[true,"10000000000000000000","2"]
+whitelist.batchMap(account30)=[true,"10000000000000000000","2"]
+Whitelisted 0 #3814 addr=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 isWhiteListed=true batch=0 weiAllocation=10000000000000000000 10
+Whitelisted 1 #3814 addr=0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f isWhiteListed=true batch=1 weiAllocation=10000000000000000000 10
+Whitelisted 2 #3814 addr=0xb33b7ecf5e47be3981c74d989d3af8b665b4b649 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 3 #3814 addr=0xb44b43d59b738b088b690ae276c1e979aba8268d isWhiteListed=true batch=3 weiAllocation=2e+22 20000
+Whitelisted 4 #3814 addr=0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8 isWhiteListed=true batch=1 weiAllocation=10000000000000000000 10
+Whitelisted 5 #3815 addr=0xb66bcb4e473de80e2c8a47ced10c22c705a5e602 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 6 #3815 addr=0xb77bbbaa7c1649547ae61de4b80b91568c28351a isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 7 #3815 addr=0xb88b728490b417e29b0784db30535db343830dba isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 8 #3815 addr=0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 9 #3815 addr=0xbaab56da883edbe5314b8005be410022c510ccae isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 10 #3815 addr=0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 11 #3815 addr=0xbccb68dd0ac87ef290aef49870d155f076c87868 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 12 #3815 addr=0xbddb726ee06906e104db210e6d0506f2b062e477 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 13 #3815 addr=0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+Whitelisted 14 #3815 addr=0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+
+---------- Deploy Crowdsale Contract ----------
+presaleWei=7575667901658360000000
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.018358341000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98        0.000000000000000000           0.000000000000000000 Account #17 - Batch 0
+18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f        0.000000000000000000           0.000000000000000000 Account #18 - Batch 1
+19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            400000000.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Deploy Crowdsale Contract
+crowdsaleAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63 status=0x1 Success gas=6000000 gasUsed=4120339 costETH=0.012361017 costUSD=10.44271077177 @ ETH/USD=844.81 gasPrice=3 gwei block=3818 txIx=0 txId=0x8bec79c8af89d74c4dbd41943cba3a15fea7df2494aed352ed65e040f51ddb78 @ 1520414877 Wed, 07 Mar 2018 09:27:57 UTC
+crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+crowdsale.paused=false
+crowdsale.getBatchStartTimesLength=4
+crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+crowdsale.isFinalized=false
+crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+crowdsale.usdPerMEth=844810000 844.81
+crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+crowdsale.weiRaised=7.57566790165836e+21 7575.66790165836
+crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+TokenPresale 0 #3818 {"amount":"1e+26","purchaser":"0xadda9b762a00ff12711113bfdc36958b73d7f915"}
+TokenFoundingTeam 0 #3818 {"amount":"5e+25","purchaser":"0xaaaa9de1e6c564446ebca0fd102d8bd92093c756"}
+TokenTreasury 0 #3818 {"amount":"1.5e+26","purchaser":"0xacca534c9f62ab495bd986e002ddf0f054caae4f"}
+EarlySupporters 0 #3818 {"amount":"1e+26","purchaser":"0xabba43e7594e3b76afb157989e93c6621497fd4b"}
+tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+token.symbol=SENC
+token.name=Sentinel Chain Token
+token.decimals=18
+token.totalSupply=400000000
+token.mintingFinished=false
+token.paused=true
+Mint 0 #3818 {"amount":"1e+26","to":"0xabba43e7594e3b76afb157989e93c6621497fd4b"}
+Mint 1 #3818 {"amount":"1e+26","to":"0xadda9b762a00ff12711113bfdc36958b73d7f915"}
+Mint 2 #3818 {"amount":"1.5e+26","to":"0xacca534c9f62ab495bd986e002ddf0f054caae4f"}
+Mint 3 #3818 {"amount":"5e+25","to":"0xaaaa9de1e6c564446ebca0fd102d8bd92093c756"}
+Transfer 0 #3818: from=0x0000000000000000000000000000000000000000 to=0xabba43e7594e3b76afb157989e93c6621497fd4b value=100000000
+Transfer 1 #3818: from=0x0000000000000000000000000000000000000000 to=0xadda9b762a00ff12711113bfdc36958b73d7f915 value=100000000
+Transfer 2 #3818: from=0x0000000000000000000000000000000000000000 to=0xacca534c9f62ab495bd986e002ddf0f054caae4f value=150000000
+Transfer 3 #3818: from=0x0000000000000000000000000000000000000000 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=50000000
+
+Waiting until 'batchStartTime0' at 1520414875.214+0s=Wed, 07 Mar 2018 17:27:56 +08 now=Wed, 07 Mar 2018 17:28:00 +08
+Waited until 'batchStartTime0' at at 1520414875.214+0s=Wed, 07 Mar 2018 17:27:56 +08 now=Wed, 07 Mar 2018 17:28:00 +08
+
+Send Contribution #1 - During Batch 0 Period
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.018801960000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        1.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -1.000360858000000000       10560.125000000000000000 Account #17 - Batch 0
+18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -0.000082761000000000           0.000000000000000000 Account #18 - Batch 1
+19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            400010560.125000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Send Contribution #1 - During Batch 0 Period - ac17 1 ETH
+PASS Send Contribution #1 - During Batch 0 Period - ac18 1 ETH - Expecting failure - wrong batch
+sendContribution1_1Tx status=0x1 Success gas=400000 gasUsed=120286 costETH=0.000360858 costUSD=0.30485644698 @ ETH/USD=844.81 gasPrice=3 gwei block=3823 txIx=0 txId=0xa1f3e513de23bfe2c1a2d8680905defb81c3196cbd39779d436358fe8591abe9 @ 1520414882 Wed, 07 Mar 2018 09:28:02 UTC
+sendContribution1_2Tx status=0x0 Failure gas=400000 gasUsed=27587 costETH=0.000082761 costUSD=0.06991732041 @ ETH/USD=844.81 gasPrice=3 gwei block=3823 txIx=1 txId=0xf87e2b1d52cb5b195e309a91c51c48c4e47f153f426c1a0ea587e06d9f51c665 @ 1520414882 Wed, 07 Mar 2018 09:28:02 UTC
+crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+crowdsale.paused=false
+crowdsale.getBatchStartTimesLength=4
+crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+crowdsale.isFinalized=false
+crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+crowdsale.usdPerMEth=844810000 844.81
+crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+crowdsale.weiRaised=7.57666790165836e+21 7576.66790165836
+crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+TokenPurchase 0 #3823 {"amount":"1.0560125e+22","beneficiary":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98","value":"1000000000000000000"}
+tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+token.symbol=SENC
+token.name=Sentinel Chain Token
+token.decimals=18
+token.totalSupply=400010560.125
+token.mintingFinished=false
+token.paused=true
+Mint 0 #3823 {"amount":"1.0560125e+22","to":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98"}
+Transfer 0 #3823: from=0x0000000000000000000000000000000000000000 to=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 value=10560.125
+
+Waiting until 'batchStartTime1' at 1520414905+0s=Wed, 07 Mar 2018 17:28:26 +08 now=Wed, 07 Mar 2018 17:28:05 +08
+Waited until 'batchStartTime1' at at 1520414905+0s=Wed, 07 Mar 2018 17:28:26 +08 now=Wed, 07 Mar 2018 17:28:26 +08
+
+Send Contribution #2 - During Batch 1 Period
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.019410792000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        3.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -2.000571071000000000       21120.250000000000000000 Account #17 - Batch 0
+18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -1.000398619000000000       10560.125000000000000000 Account #18 - Batch 1
+19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649       -0.000082761000000000           0.000000000000000000 Account #19 - Batch 2
+20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            400031680.375000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Send Contribution #2 - During Batch 1 Period - ac17 1 ETH
+PASS Send Contribution #2 - During Batch 1 Period - ac18 1 ETH
+PASS Send Contribution #2 - During Batch 1 Period - ac19 1 ETH - Expecting failure - wrong batch
+sendContribution2_1Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3849 txIx=1 txId=0x8327e982918bcbe4f77d264aac61041abc839176c33cda0178e40689a32f5a48 @ 1520414908 Wed, 07 Mar 2018 09:28:28 UTC
+sendContribution2_2Tx status=0x1 Success gas=400000 gasUsed=105286 costETH=0.000315858 costUSD=0.26683999698 @ ETH/USD=844.81 gasPrice=3 gwei block=3849 txIx=0 txId=0xf14722791db732389d655e052bd137adc5685a3a4e94d2bd0c088237b8eba9d5 @ 1520414908 Wed, 07 Mar 2018 09:28:28 UTC
+sendContribution2_3Tx status=0x0 Failure gas=400000 gasUsed=27587 costETH=0.000082761 costUSD=0.06991732041 @ ETH/USD=844.81 gasPrice=3 gwei block=3849 txIx=2 txId=0x5f1e74d83a14064d4c5214ac5475ad4742c20fd09c66b6434321b199bdfeae4e @ 1520414908 Wed, 07 Mar 2018 09:28:28 UTC
+crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+crowdsale.paused=false
+crowdsale.getBatchStartTimesLength=4
+crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+crowdsale.isFinalized=false
+crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+crowdsale.usdPerMEth=844810000 844.81
+crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+crowdsale.weiRaised=7.57866790165836e+21 7578.66790165836
+crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+TokenPurchase 0 #3849 {"amount":"1.0560125e+22","beneficiary":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f","value":"1000000000000000000"}
+TokenPurchase 1 #3849 {"amount":"1.0560125e+22","beneficiary":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98","value":"1000000000000000000"}
+tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+token.symbol=SENC
+token.name=Sentinel Chain Token
+token.decimals=18
+token.totalSupply=400031680.375
+token.mintingFinished=false
+token.paused=true
+Mint 0 #3849 {"amount":"1.0560125e+22","to":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f"}
+Mint 1 #3849 {"amount":"1.0560125e+22","to":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98"}
+Transfer 0 #3849: from=0x0000000000000000000000000000000000000000 to=0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f value=10560.125
+Transfer 1 #3849: from=0x0000000000000000000000000000000000000000 to=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 value=10560.125
+
+Waiting until 'batchStartTime2' at 1520414935+0s=Wed, 07 Mar 2018 17:28:56 +08 now=Wed, 07 Mar 2018 17:28:32 +08
+Waited until 'batchStartTime2' at at 1520414935+0s=Wed, 07 Mar 2018 17:28:56 +08 now=Wed, 07 Mar 2018 17:28:56 +08
+
+Send Contribution #3 - During Batch 2 Period
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.020229837000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        6.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -3.000781284000000000       31680.375000000000000000 Account #17 - Batch 0
+18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -2.000608832000000000       21120.250000000000000000 Account #18 - Batch 1
+19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649       -1.000398619000000000       10560.125000000000000000 Account #19 - Batch 2
+20 0xb44b43d59b738b088b690ae276c1e979aba8268d       -0.000082761000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            400063360.750000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Send Contribution #3 - During Batch 2 Period - ac17 1 ETH
+PASS Send Contribution #3 - During Batch 2 Period - ac18 1 ETH
+PASS Send Contribution #3 - During Batch 2 Period - ac19 1 ETH
+PASS Send Contribution #3 - During Batch 2 Period - ac20 1 ETH - Expecting failure - wrong batch
+sendContribution3_1Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3879 txIx=0 txId=0xd1a15f09b1759a56dda92ea7df8eb87872821283da8b894643d97bc72085421b @ 1520414938 Wed, 07 Mar 2018 09:28:58 UTC
+sendContribution3_2Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3879 txIx=3 txId=0xb669af5cb3afd7de098960149547bdf99a790484d9d28adbd8433e372e5bc039 @ 1520414938 Wed, 07 Mar 2018 09:28:58 UTC
+sendContribution3_3Tx status=0x1 Success gas=400000 gasUsed=105286 costETH=0.000315858 costUSD=0.26683999698 @ ETH/USD=844.81 gasPrice=3 gwei block=3879 txIx=2 txId=0x5c0df5c20905746101f5990dd21910ae94a5450ac40c50d5ff276edd1c72487a @ 1520414938 Wed, 07 Mar 2018 09:28:58 UTC
+sendContribution3_4Tx status=0x0 Failure gas=400000 gasUsed=27587 costETH=0.000082761 costUSD=0.06991732041 @ ETH/USD=844.81 gasPrice=3 gwei block=3879 txIx=1 txId=0x9d234e5c0c04399f275e918fa418c4c98ee30d2ac1de04745f3b30cc347c449e @ 1520414938 Wed, 07 Mar 2018 09:28:58 UTC
+crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+crowdsale.paused=false
+crowdsale.getBatchStartTimesLength=4
+crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+crowdsale.isFinalized=false
+crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+crowdsale.usdPerMEth=844810000 844.81
+crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+crowdsale.weiRaised=7.58166790165836e+21 7581.66790165836
+crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+TokenPurchase 0 #3879 {"amount":"1.0560125e+22","beneficiary":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98","value":"1000000000000000000"}
+TokenPurchase 1 #3879 {"amount":"1.0560125e+22","beneficiary":"0xb33b7ecf5e47be3981c74d989d3af8b665b4b649","value":"1000000000000000000"}
+TokenPurchase 2 #3879 {"amount":"1.0560125e+22","beneficiary":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f","value":"1000000000000000000"}
+tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+token.symbol=SENC
+token.name=Sentinel Chain Token
+token.decimals=18
+token.totalSupply=400063360.75
+token.mintingFinished=false
+token.paused=true
+Mint 0 #3879 {"amount":"1.0560125e+22","to":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98"}
+Mint 1 #3879 {"amount":"1.0560125e+22","to":"0xb33b7ecf5e47be3981c74d989d3af8b665b4b649"}
+Mint 2 #3879 {"amount":"1.0560125e+22","to":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f"}
+Transfer 0 #3879: from=0x0000000000000000000000000000000000000000 to=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 value=10560.125
+Transfer 1 #3879: from=0x0000000000000000000000000000000000000000 to=0xb33b7ecf5e47be3981c74d989d3af8b665b4b649 value=10560.125
+Transfer 2 #3879: from=0x0000000000000000000000000000000000000000 to=0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f value=10560.125
+
+Waiting until 'batchStartTime3' at 1520414965+0s=Wed, 07 Mar 2018 17:29:26 +08 now=Wed, 07 Mar 2018 17:29:01 +08
+Waited until 'batchStartTime3' at at 1520414965+0s=Wed, 07 Mar 2018 17:29:26 +08 now=Wed, 07 Mar 2018 17:29:26 +08
+
+Send Contribution #4 - During Batch 3 Period
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021492192000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0     9469.584877000000000000           0.000000000000000000 Account #9 - Ag Tech
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -4.000991497000000000       42240.500000000000000000 Account #17 - Batch 0
+18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -3.000819045000000000       31680.375000000000000000 Account #18 - Batch 1
+19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649       -2.000608832000000000       21120.250000000000000000 Account #19 - Batch 2
+20 0xb44b43d59b738b088b690ae276c1e979aba8268d    -9459.585275619000000000    99894398.749229625000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8       -1.000315858000000000       10560.125000000000000000 Account #21 - Batch 1 -> 2
+22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            499999999.999229625000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Send Contribution #4 - During Batch 3 Period - ac17 1 ETH
+PASS Send Contribution #4 - During Batch 3 Period - ac18 1 ETH
+PASS Send Contribution #4 - During Batch 3 Period - ac19 1 ETH
+PASS Send Contribution #4 - During Batch 3 Period - ac20 9,459.5848770 ETH
+PASS Send Contribution #4 - During Batch 3 Period - ac21 1 ETH - Expecting failure - wrong batch
+sendContribution4_1Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=1 txId=0x591cc8c44e20e3fe795bf284d5dbafbeaea369c4dd33a3e087bdf1dc82960863 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+sendContribution4_2Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=0 txId=0x0c0d9292296b12910399938f51b4589e192b36c0e612c5a04e86e4eeff8586d6 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+sendContribution4_3Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=4 txId=0x9046bfa4fb6b9a49918f6652984dec1ecd5f276812c9dd1ef6ea5773ee0e7493 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+sendContribution4_4Tx status=0x1 Success gas=400000 gasUsed=105286 costETH=0.000315858 costUSD=0.26683999698 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=3 txId=0xff4bc46bfe245b4d1739e2ad3017810b921a37c04a4e6897859a86bf189b8839 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+sendContribution4_5Tx status=0x1 Success gas=400000 gasUsed=105286 costETH=0.000315858 costUSD=0.26683999698 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=2 txId=0x2c027a57d8f503226f54dbbffbca507ecb26d25d22f326b92bd8aaa591d0b2e0 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+crowdsale.paused=false
+crowdsale.getBatchStartTimesLength=4
+crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+crowdsale.isFinalized=false
+crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+crowdsale.usdPerMEth=844810000 844.81
+crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+crowdsale.weiRaised=1.704525277865836e+22 17045.25277865836
+crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+TokenPurchase 0 #3909 {"amount":"1.0560125e+22","beneficiary":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f","value":"1000000000000000000"}
+TokenPurchase 1 #3909 {"amount":"1.0560125e+22","beneficiary":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98","value":"1000000000000000000"}
+TokenPurchase 2 #3909 {"amount":"1.0560125e+22","beneficiary":"0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8","value":"1000000000000000000"}
+TokenPurchase 3 #3909 {"amount":"9.9894398749229625e+25","beneficiary":"0xb44b43d59b738b088b690ae276c1e979aba8268d","value":"9.459584877e+21"}
+TokenPurchase 4 #3909 {"amount":"1.0560125e+22","beneficiary":"0xb33b7ecf5e47be3981c74d989d3af8b665b4b649","value":"1000000000000000000"}
+tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+token.symbol=SENC
+token.name=Sentinel Chain Token
+token.decimals=18
+token.totalSupply=499999999.999229625
+token.mintingFinished=false
+token.paused=true
+Mint 0 #3909 {"amount":"1.0560125e+22","to":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f"}
+Mint 1 #3909 {"amount":"1.0560125e+22","to":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98"}
+Mint 2 #3909 {"amount":"1.0560125e+22","to":"0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8"}
+Mint 3 #3909 {"amount":"9.9894398749229625e+25","to":"0xb44b43d59b738b088b690ae276c1e979aba8268d"}
+Mint 4 #3909 {"amount":"1.0560125e+22","to":"0xb33b7ecf5e47be3981c74d989d3af8b665b4b649"}
+Transfer 0 #3909: from=0x0000000000000000000000000000000000000000 to=0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f value=10560.125
+Transfer 1 #3909: from=0x0000000000000000000000000000000000000000 to=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 value=10560.125
+Transfer 2 #3909: from=0x0000000000000000000000000000000000000000 to=0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8 value=10560.125
+Transfer 3 #3909: from=0x0000000000000000000000000000000000000000 to=0xb44b43d59b738b088b690ae276c1e979aba8268d value=99894398.749229625
+Transfer 4 #3909: from=0x0000000000000000000000000000000000000000 to=0xb33b7ecf5e47be3981c74d989d3af8b665b4b649 value=10560.125
+
+Waiting until 'endTime' at 1520414995+0s=Wed, 07 Mar 2018 17:29:56 +08 now=Wed, 07 Mar 2018 17:29:30 +08
+Waited until 'endTime' at at 1520414995+0s=Wed, 07 Mar 2018 17:29:56 +08 now=Wed, 07 Mar 2018 17:29:56 +08
+
+Finalise
+ # Account                                             EtherBalanceChange                          Token Name
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+ 0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021751731000000000           0.000000000000000000 Account #0 - Miner
+ 1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018617880000000000           0.000770375000000000 Account #1 - Contract Owner
+ 2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+ 3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+ 4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+ 5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+ 6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+ 7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+ 8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+ 9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0     9469.584877000000000000           0.000000000000000000 Account #9 - Ag Tech
+10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -4.000991497000000000       42240.500000000000000000 Account #17 - Batch 0
+18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -3.000819045000000000       31680.375000000000000000 Account #18 - Batch 1
+19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649       -2.000608832000000000       21120.250000000000000000 Account #19 - Batch 2
+20 0xb44b43d59b738b088b690ae276c1e979aba8268d    -9459.585275619000000000    99894398.749229625000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8       -1.000315858000000000       10560.125000000000000000 Account #21 - Batch 1 -> 2
+22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+                                                                            500000000.000000000000000000 Total Token Balances
+-- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+
+PASS Finalise
+finalise_1Tx status=0x1 Success gas=300000 gasUsed=86513 costETH=0.000259539 costUSD=0.21926114259 @ ETH/USD=844.81 gasPrice=3 gwei block=3939 txIx=0 txId=0xc05ebfdd8ff497ca67203748d765aa48798c2643fce78a4c5d21eda5f8d8d11d @ 1520414998 Wed, 07 Mar 2018 09:29:58 UTC
+crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+crowdsale.paused=false
+crowdsale.getBatchStartTimesLength=4
+crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+crowdsale.isFinalized=true
+crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+crowdsale.usdPerMEth=844810000 844.81
+crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+crowdsale.weiRaised=1.704525277865836e+22 17045.25277865836
+crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+Finalized 0 #3939 {}
+tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+token.symbol=SENC
+token.name=Sentinel Chain Token
+token.decimals=18
+token.totalSupply=500000000
+token.mintingFinished=true
+token.paused=true
+OwnershipTransferred 0 #3939 {"newOwner":"0xa11aae29840fbb5c86e6fd4cf809eba183aef433","previousOwner":"0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63"}
+Mint 0 #3939 {"amount":"770375000000000","to":"0xa11aae29840fbb5c86e6fd4cf809eba183aef433"}
+MintFinished 0 #3939 {}
+Transfer 0 #3939: from=0x0000000000000000000000000000000000000000 to=0xa11aae29840fbb5c86e6fd4cf809eba183aef433 value=0.000770375
+

@@ -1,0 +1,1254 @@
+MODE               = 'test'
+GETHATTACHPOINT    = 'ipc:./testchain/geth.ipc'
+PASSWORD           = ''
+SOURCEDIR          = '../contracts'
+ZEPPELINSOURCEDIR  = '../contracts/zeppelin-solidity/contracts'
+CROWDSALESOL       = 'SencTokenSale.sol'
+CROWDSALEJS        = 'SencTokenSale.js'
+WHITELISTSOL       = 'WhiteListed.sol'
+WHITELISTJS        = 'Whitelisted.js'
+DEPLOYMENTDATA     = 'deploymentData.txt'
+INCLUDEJS          = './include.js'
+TEST1OUTPUT        = 'test1output.txt'
+TEST1RESULTS       = 'test1results.txt'
+CURRENTTIME        = '1520414852' 'Wed  7 Mar 2018 09:27:32 UTC'
+START_DATE         = '1520414882' 'Wed  7 Mar 2018 09:28:02 UTC'
+END_DATE           = '1520414942' 'Wed  7 Mar 2018 09:29:02 UTC'
+REFUND_END_DATE    = '1520414972' 'Wed  7 Mar 2018 09:29:32 UTC'
+--- Differences ../contracts/Migrations.sol Migrations.sol ---
+
+--- Differences ../contracts/Operatable.sol Operatable.sol ---
+13,14c13,14
+< import "./zeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+< import "./zeppelin-solidity/contracts/ownership/Ownable.sol";
+---
+> import "./token/ERC20/ERC20.sol";
+> import "./ownership/Ownable.sol";
+--- Differences ../contracts/OperatableBasic.sol OperatableBasic.sol ---
+
+--- Differences ../contracts/Salvageable.sol Salvageable.sol ---
+13c13
+< import "./zeppelin-solidity/contracts/token/ERC20/ERC20.sol";
+---
+> import "./token/ERC20/ERC20.sol";
+--- Differences ../contracts/SencToken.sol SencToken.sol ---
+12,13c12,13
+< import "./zeppelin-solidity/contracts/token/ERC20/PausableToken.sol";
+< import "./zeppelin-solidity/contracts/math/SafeMath.sol";
+---
+> import "./token/ERC20/PausableToken.sol";
+> import "./math/SafeMath.sol";
+--- Differences ../contracts/SencTokenConfig.sol SencTokenConfig.sol ---
+
+--- Differences ../contracts/SencTokenSale.sol SencTokenSale.sol ---
+12,14c12,14
+< import "./zeppelin-solidity/contracts/math/SafeMath.sol";
+< import "./zeppelin-solidity/contracts/ownership/Ownable.sol";
+< import "./zeppelin-solidity/contracts/lifecycle/Pausable.sol";
+---
+> import "./math/SafeMath.sol";
+> import "./ownership/Ownable.sol";
+> import "./lifecycle/Pausable.sol";
+--- Differences ../contracts/SencTokenSaleConfig.sol SencTokenSaleConfig.sol ---
+
+--- Differences ../contracts/SencVesting.sol SencVesting.sol ---
+12,13c12,13
+< import "./zeppelin-solidity/contracts/math/Math.sol";
+< import "./zeppelin-solidity/contracts/math/SafeMath.sol";
+---
+> import "./math/Math.sol";
+> import "./math/SafeMath.sol";
+--- Differences ../contracts/WhiteListed.sol WhiteListed.sol ---
+
+--- Differences ../contracts/WhiteListedBasic.sol WhiteListedBasic.sol ---
+
+solc, the solidity compiler commandline interface
+Version: 0.4.20+commit.3155dd80.Darwin.appleclang
+Welcome to the Geth JavaScript console!
+
+instance: Geth/v1.7.3-stable-4bb3c89d/darwin-amd64/go1.9.2
+coinbase: 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e
+at block: 3794 (Wed, 07 Mar 2018 17:27:33 +08)
+ datadir: /Users/bok/Projects/SentinelChainPrivate/ico/bokkyTest/testchain
+ modules: admin:1.0 clique:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 rpc:1.0 shh:1.0 txpool:1.0 web3:1.0
+
+> 
+true
+> 
+true
+> 
+> 
+undefined
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+> 
+DATA: var tokenAbi=[{"constant":false,"inputs":[{"name":"bountyWallet","type":"address"},{"name":"dests","type":"address[]"},{"name":"values","type":"uint256[]"}],"name":"airdrop","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"mintingFinished","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"name","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_value","type":"uint256"}],"name":"approve","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"isSecondaryOperator","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"totalSupply","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_from","type":"address"},{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transferFrom","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"isPrimaryOperator","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"DECIMALS","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"decimals","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"unpause","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_amount","type":"uint256"}],"name":"mint","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"paused","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setSecondaryOperator","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_subtractedValue","type":"uint256"}],"name":"decreaseApproval","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"}],"name":"balanceOf","outputs":[{"name":"balance","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"finishMinting","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"pause","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"DECIMALSFACTOR","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"TOTALSUPPLY","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"symbol","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"NAME","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_to","type":"address"},{"name":"_value","type":"uint256"}],"name":"transfer","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setPrimaryOperator","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"primaryOperator","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_spender","type":"address"},{"name":"_addedValue","type":"uint256"}],"name":"increaseApproval","outputs":[{"name":"success","type":"bool"}],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"oddToken","type":"address"},{"name":"amount","type":"uint256"}],"name":"emergencyERC20Drain","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"_owner","type":"address"},{"name":"_spender","type":"address"}],"name":"allowance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"SYMBOL","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"secondaryOperator","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"Mint","type":"event"},{"anonymous":false,"inputs":[],"name":"MintFinished","type":"event"},{"anonymous":false,"inputs":[],"name":"Pause","type":"event"},{"anonymous":false,"inputs":[],"name":"Unpause","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"previousOwner","type":"address"},{"indexed":true,"name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"owner","type":"address"},{"indexed":true,"name":"spender","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"from","type":"address"},{"indexed":true,"name":"to","type":"address"},{"indexed":false,"name":"value","type":"uint256"}],"name":"Transfer","type":"event"}];
+undefined
+> 
+undefined
+> 
+DATA: var crowdsaleAbi=[{"constant":true,"inputs":[],"name":"PRIVATESALE_USD_PER_MSENC","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"batch","type":"uint256"}],"name":"isBatchActive","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"isSecondaryOperator","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"publicSaleSencPerMEth","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"isPrimaryOperator","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"DECIMALS","outputs":[{"name":"","type":"uint8"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"endTime","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"MILLION","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"sencBalance","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getBatchStartTimesLength","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"reclaimTokens","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[],"name":"unpause","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"weiRaised","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"MIN_CONTRIBUTION","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"contributions","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"PUBLICSALE_USD_PER_MSENC","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"sencSold","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"whiteListed","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"batchActive","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"finalize","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"paused","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setSecondaryOperator","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"TOKEN_TREASURY","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_endTime","type":"uint256"}],"name":"updateEndTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"","type":"uint256"}],"name":"batchStartTimes","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"startTime","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[],"name":"pause","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"DECIMALSFACTOR","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"isFinalized","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"numContributors","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"TOKEN_FOUNDINGTEAM","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"TOKEN_PRESALE","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"TOTALSUPPLY","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"NAME","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"privateSaleSencPerMEth","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setPrimaryOperator","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"usdPerMEth","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"_batchNumber","type":"uint256"},{"name":"_batchStartTime","type":"uint256"}],"name":"updateBatchStartTime","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"_usdPerMEth","type":"uint256"}],"name":"updateUsdPerMEth","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"primaryOperator","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"oddToken","type":"address"},{"name":"amount","type":"uint256"}],"name":"emergencyERC20Drain","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"TOKEN_EARLYSUPPORTERS","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"usdRaised","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"hasEnded","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"agTechWallet","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"SYMBOL","outputs":[{"name":"","type":"string"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"token","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"secondaryOperator","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"ethRaised","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"inputs":[{"name":"_batchStartTimes","type":"uint256[]"},{"name":"_endTime","type":"uint256"},{"name":"_usdPerMEth","type":"uint256"},{"name":"_presaleWei","type":"uint256"},{"name":"_whiteListed","type":"address"},{"name":"_agTechWallet","type":"address"},{"name":"_foundingTeamWallet","type":"address"},{"name":"_earlySupportersWallet","type":"address"},{"name":"_treasuryWallet","type":"address"},{"name":"_presaleWallet","type":"address"},{"name":"_tokenIssuer","type":"address"}],"payable":false,"stateMutability":"nonpayable","type":"constructor"},{"payable":true,"stateMutability":"payable","type":"fallback"},{"anonymous":false,"inputs":[],"name":"Finalized","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"beneficiary","type":"address"},{"indexed":false,"name":"value","type":"uint256"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"TokenPurchase","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"purchaser","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"TokenPresale","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"purchaser","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"TokenFoundingTeam","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"purchaser","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"TokenTreasury","type":"event"},{"anonymous":false,"inputs":[{"indexed":false,"name":"purchaser","type":"address"},{"indexed":false,"name":"amount","type":"uint256"}],"name":"EarlySupporters","type":"event"},{"anonymous":false,"inputs":[],"name":"Pause","type":"event"},{"anonymous":false,"inputs":[],"name":"Unpause","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"previousOwner","type":"address"},{"indexed":true,"name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"}];
+undefined
+> 
+undefined
+> 
+DATA: var whitelistAbi=[{"constant":true,"inputs":[],"name":"count","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"isSecondaryOperator","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"isPrimaryOperator","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"addrs","type":"address[]"},{"name":"weiAllocation","type":"uint256[]"}],"name":"setAllocation","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setSecondaryOperator","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"getBatchNumber","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"addrs","type":"address[]"},{"name":"batches","type":"uint256[]"},{"name":"weiAllocation","type":"uint256[]"}],"name":"addWhiteListed","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"isWhiteListed","outputs":[{"name":"","type":"bool"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[],"name":"getWhiteListCount","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"addr","type":"address"}],"name":"getAllocated","outputs":[{"name":"","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"setPrimaryOperator","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"addrs","type":"address[]"},{"name":"batch","type":"uint256[]"}],"name":"setBatchNumber","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"primaryOperator","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":true,"inputs":[{"name":"","type":"address"}],"name":"batchMap","outputs":[{"name":"isWhitelisted","type":"bool"},{"name":"weiAllocated","type":"uint256"},{"name":"batchNumber","type":"uint256"}],"payable":false,"stateMutability":"view","type":"function"},{"constant":false,"inputs":[{"name":"addr","type":"address"}],"name":"removeWhiteListed","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":false,"inputs":[{"name":"newOwner","type":"address"}],"name":"transferOwnership","outputs":[],"payable":false,"stateMutability":"nonpayable","type":"function"},{"constant":true,"inputs":[],"name":"secondaryOperator","outputs":[{"name":"","type":"address"}],"payable":false,"stateMutability":"view","type":"function"},{"anonymous":false,"inputs":[{"indexed":true,"name":"addr","type":"address"},{"indexed":false,"name":"whitelistedCount","type":"uint256"},{"indexed":false,"name":"isWhitelisted","type":"bool"},{"indexed":true,"name":"batch","type":"uint256"},{"indexed":false,"name":"weiAllocation","type":"uint256"}],"name":"Whitelisted","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"name":"previousOwner","type":"address"},{"indexed":true,"name":"newOwner","type":"address"}],"name":"OwnershipTransferred","type":"event"}];
+undefined
+> 
+undefined
+> 
+> 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.000000000000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433        0.000000000000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Founding Team
+RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11 - Early Supporters
+RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000           0.000000000000000000 Account #12 - Treasury
+RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000           0.000000000000000000 Account #13 - Presale Group
+RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+RESULT: 15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+RESULT: 16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+RESULT: 17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98        0.000000000000000000           0.000000000000000000 Account #17 - Batch 0
+RESULT: 18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f        0.000000000000000000           0.000000000000000000 Account #18 - Batch 1
+RESULT: 19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+RESULT: 20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+RESULT: 21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+RESULT: 22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+RESULT: 23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+RESULT: 24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+RESULT: 25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+RESULT: 26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+RESULT: 27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+RESULT: 28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+RESULT: 29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+RESULT: 30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+RESULT: 31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                     0.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Deploy Whitelist Contract ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+...... 
+......... 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+......... 
+...... 
+... 
+undefined
+> 
+... 
+undefined
+> 
+DATA: var whitelistAddress="0x4ad3ae36d5ca6ede210385b8357a566a5ecea272";
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.002658402000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.002658402000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Founding Team
+RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11 - Early Supporters
+RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000           0.000000000000000000 Account #12 - Treasury
+RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000           0.000000000000000000 Account #13 - Presale Group
+RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+RESULT: 15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+RESULT: 16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+RESULT: 17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98        0.000000000000000000           0.000000000000000000 Account #17 - Batch 0
+RESULT: 18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f        0.000000000000000000           0.000000000000000000 Account #18 - Batch 1
+RESULT: 19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+RESULT: 20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+RESULT: 21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+RESULT: 22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+RESULT: 23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+RESULT: 24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+RESULT: 25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+RESULT: 26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+RESULT: 27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+RESULT: 28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+RESULT: 29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+RESULT: 30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+RESULT: 31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+RESULT: 32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                     0.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Deploy Whitelist Contract
+1
+> 
+RESULT: whitelistAddress=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272 status=0x1 Success gas=6000000 gasUsed=886134 costETH=0.002658402 costUSD=2.24584459362 @ ETH/USD=844.81 gasPrice=3 gwei block=3811 txIx=0 txId=0xa8bd33098c740d95b330bad4e9f93f2f02a5be50acab93d9cc626876c5b2ef15 @ 1520414870 Wed, 07 Mar 2018 09:27:50 UTC
+undefined
+> 
+RESULT: whitelistContractAddress=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+RESULT: whitelist.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: whitelist.primaryOperator=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: whitelist.secondaryOperator=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: whitelist.getWhiteListCount=0
+RESULT: whitelist.getAllocated(account17)=0 0 ETH
+RESULT: whitelist.getBatchNumber(account17)=0
+RESULT: whitelist.isWhiteListed(account17)=false
+RESULT: whitelist.batchMap(account17)=[false,"0","0"]
+RESULT: whitelist.batchMap(account18)=[false,"0","0"]
+RESULT: whitelist.batchMap(account19)=[false,"0","0"]
+RESULT: whitelist.batchMap(account20)=[false,"0","0"]
+RESULT: whitelist.batchMap(account21)=[false,"0","0"]
+RESULT: whitelist.batchMap(account22)=[false,"0","0"]
+RESULT: whitelist.batchMap(account30)=[false,"0","0"]
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Add To Whitelist ----------
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.005997324000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.005997324000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000           0.000000000000000000 Account #10 - Founding Team
+RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000           0.000000000000000000 Account #11 - Early Supporters
+RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000           0.000000000000000000 Account #12 - Treasury
+RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000           0.000000000000000000 Account #13 - Presale Group
+RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+RESULT: 15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+RESULT: 16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+RESULT: 17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98        0.000000000000000000           0.000000000000000000 Account #17 - Batch 0
+RESULT: 18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f        0.000000000000000000           0.000000000000000000 Account #18 - Batch 1
+RESULT: 19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+RESULT: 20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+RESULT: 21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+RESULT: 22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+RESULT: 23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+RESULT: 24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+RESULT: 25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+RESULT: 26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+RESULT: 27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+RESULT: 28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+RESULT: 29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+RESULT: 30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+RESULT: 31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+RESULT: 32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                                     0.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Add To Whitelist
+1
+> 
+RESULT: PASS Add To Whitelist
+1
+> 
+RESULT: whitelist0_1Tx status=0x1 Success gas=1000000 gasUsed=378846 costETH=0.001136538 costUSD=0.96015866778 @ ETH/USD=844.81 gasPrice=3 gwei block=3814 txIx=0 txId=0xcf7c01e5a19fccbcb02a920b674df1c61b77034b8df84391dd70912cad9a7c28 @ 1520414873 Wed, 07 Mar 2018 09:27:53 UTC
+undefined
+> 
+RESULT: whitelist0_2Tx status=0x1 Success gas=1000000 gasUsed=734128 costETH=0.002202384 costUSD=1.86059602704 @ ETH/USD=844.81 gasPrice=3 gwei block=3815 txIx=0 txId=0x6e1b8037167c1da8e05045586a266b13589078135f8f21aae857db6790506c88 @ 1520414874 Wed, 07 Mar 2018 09:27:54 UTC
+undefined
+> 
+RESULT: whitelistContractAddress=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+RESULT: whitelist.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: whitelist.primaryOperator=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: whitelist.secondaryOperator=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: whitelist.getWhiteListCount=15
+RESULT: whitelist.getAllocated(account17)=10000000000000000000 10 ETH
+RESULT: whitelist.getBatchNumber(account17)=0
+RESULT: whitelist.isWhiteListed(account17)=true
+RESULT: whitelist.batchMap(account17)=[true,"10000000000000000000","0"]
+RESULT: whitelist.batchMap(account18)=[true,"10000000000000000000","1"]
+RESULT: whitelist.batchMap(account19)=[true,"10000000000000000000","2"]
+RESULT: whitelist.batchMap(account20)=[true,"2e+22","3"]
+RESULT: whitelist.batchMap(account21)=[true,"10000000000000000000","1"]
+RESULT: whitelist.batchMap(account22)=[true,"10000000000000000000","2"]
+RESULT: whitelist.batchMap(account30)=[true,"10000000000000000000","2"]
+RESULT: Whitelisted 0 #3814 addr=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 isWhiteListed=true batch=0 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 1 #3814 addr=0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f isWhiteListed=true batch=1 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 2 #3814 addr=0xb33b7ecf5e47be3981c74d989d3af8b665b4b649 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 3 #3814 addr=0xb44b43d59b738b088b690ae276c1e979aba8268d isWhiteListed=true batch=3 weiAllocation=2e+22 20000
+RESULT: Whitelisted 4 #3814 addr=0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8 isWhiteListed=true batch=1 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 5 #3815 addr=0xb66bcb4e473de80e2c8a47ced10c22c705a5e602 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 6 #3815 addr=0xb77bbbaa7c1649547ae61de4b80b91568c28351a isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 7 #3815 addr=0xb88b728490b417e29b0784db30535db343830dba isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 8 #3815 addr=0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 9 #3815 addr=0xbaab56da883edbe5314b8005be410022c510ccae isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 10 #3815 addr=0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 11 #3815 addr=0xbccb68dd0ac87ef290aef49870d155f076c87868 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 12 #3815 addr=0xbddb726ee06906e104db210e6d0506f2b062e477 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 13 #3815 addr=0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87 isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+RESULT: Whitelisted 14 #3815 addr=0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff isWhiteListed=true batch=2 weiAllocation=10000000000000000000 10
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+...... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+undefined
+> 
+> 
+> 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+...... 
+... 
+... 
+... 
+... 
+... 
+... 
+... 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: ---------- Deploy Crowdsale Contract ----------
+undefined
+> 
+RESULT: presaleWei=7575667901658360000000
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+... 
+...... 
+......... 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+............ 
+......... 
+...... 
+... 
+undefined
+> 
+... 
+undefined
+> 
+DATA: var crowdsaleAddress="0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63";
+DATA: var tokenAddress="0x16dd50561b6ce76baab1fb7b0e824fe49852844a";
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.018358341000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        0.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+RESULT: 15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+RESULT: 16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+RESULT: 17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98        0.000000000000000000           0.000000000000000000 Account #17 - Batch 0
+RESULT: 18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f        0.000000000000000000           0.000000000000000000 Account #18 - Batch 1
+RESULT: 19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+RESULT: 20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+RESULT: 21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+RESULT: 22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+RESULT: 23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+RESULT: 24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+RESULT: 25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+RESULT: 26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+RESULT: 27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+RESULT: 28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+RESULT: 29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+RESULT: 30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+RESULT: 31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+RESULT: 32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+RESULT: 33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+RESULT: 34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             400000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Deploy Crowdsale Contract
+1
+> 
+RESULT: crowdsaleAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63 status=0x1 Success gas=6000000 gasUsed=4120339 costETH=0.012361017 costUSD=10.44271077177 @ ETH/USD=844.81 gasPrice=3 gwei block=3818 txIx=0 txId=0x8bec79c8af89d74c4dbd41943cba3a15fea7df2494aed352ed65e040f51ddb78 @ 1520414877 Wed, 07 Mar 2018 09:27:57 UTC
+undefined
+> 
+RESULT: crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+RESULT: crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+RESULT: crowdsale.paused=false
+RESULT: crowdsale.getBatchStartTimesLength=4
+RESULT: crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+RESULT: crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+RESULT: crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+RESULT: crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+RESULT: crowdsale.isFinalized=false
+RESULT: crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+RESULT: crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+RESULT: crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+RESULT: crowdsale.usdPerMEth=844810000 844.81
+RESULT: crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+RESULT: crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+RESULT: crowdsale.weiRaised=7.57566790165836e+21 7575.66790165836
+RESULT: crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+RESULT: TokenPresale 0 #3818 {"amount":"1e+26","purchaser":"0xadda9b762a00ff12711113bfdc36958b73d7f915"}
+RESULT: TokenFoundingTeam 0 #3818 {"amount":"5e+25","purchaser":"0xaaaa9de1e6c564446ebca0fd102d8bd92093c756"}
+RESULT: TokenTreasury 0 #3818 {"amount":"1.5e+26","purchaser":"0xacca534c9f62ab495bd986e002ddf0f054caae4f"}
+RESULT: EarlySupporters 0 #3818 {"amount":"1e+26","purchaser":"0xabba43e7594e3b76afb157989e93c6621497fd4b"}
+undefined
+> 
+RESULT: tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=400000000
+RESULT: token.mintingFinished=false
+RESULT: token.paused=true
+RESULT: Mint 0 #3818 {"amount":"1e+26","to":"0xabba43e7594e3b76afb157989e93c6621497fd4b"}
+RESULT: Mint 1 #3818 {"amount":"1e+26","to":"0xadda9b762a00ff12711113bfdc36958b73d7f915"}
+RESULT: Mint 2 #3818 {"amount":"1.5e+26","to":"0xacca534c9f62ab495bd986e002ddf0f054caae4f"}
+RESULT: Mint 3 #3818 {"amount":"5e+25","to":"0xaaaa9de1e6c564446ebca0fd102d8bd92093c756"}
+RESULT: Transfer 0 #3818: from=0x0000000000000000000000000000000000000000 to=0xabba43e7594e3b76afb157989e93c6621497fd4b value=100000000
+RESULT: Transfer 1 #3818: from=0x0000000000000000000000000000000000000000 to=0xadda9b762a00ff12711113bfdc36958b73d7f915 value=100000000
+RESULT: Transfer 2 #3818: from=0x0000000000000000000000000000000000000000 to=0xacca534c9f62ab495bd986e002ddf0f054caae4f value=150000000
+RESULT: Transfer 3 #3818: from=0x0000000000000000000000000000000000000000 to=0xaaaa9de1e6c564446ebca0fd102d8bd92093c756 value=50000000
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+RESULT: Waiting until 'batchStartTime0' at 1520414875.214+0s=Wed, 07 Mar 2018 17:27:56 +08 now=Wed, 07 Mar 2018 17:28:00 +08
+RESULT: Waited until 'batchStartTime0' at at 1520414875.214+0s=Wed, 07 Mar 2018 17:27:56 +08 now=Wed, 07 Mar 2018 17:28:00 +08
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: Send Contribution #1 - During Batch 0 Period
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.018801960000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        1.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+RESULT: 15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+RESULT: 16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+RESULT: 17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -1.000360858000000000       10560.125000000000000000 Account #17 - Batch 0
+RESULT: 18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -0.000082761000000000           0.000000000000000000 Account #18 - Batch 1
+RESULT: 19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649        0.000000000000000000           0.000000000000000000 Account #19 - Batch 2
+RESULT: 20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+RESULT: 21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+RESULT: 22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+RESULT: 23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+RESULT: 24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+RESULT: 25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+RESULT: 26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+RESULT: 27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+RESULT: 28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+RESULT: 29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+RESULT: 30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+RESULT: 31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+RESULT: 32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+RESULT: 33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+RESULT: 34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             400010560.125000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Send Contribution #1 - During Batch 0 Period - ac17 1 ETH
+1
+> 
+RESULT: PASS Send Contribution #1 - During Batch 0 Period - ac18 1 ETH - Expecting failure - wrong batch
+1
+> 
+RESULT: sendContribution1_1Tx status=0x1 Success gas=400000 gasUsed=120286 costETH=0.000360858 costUSD=0.30485644698 @ ETH/USD=844.81 gasPrice=3 gwei block=3823 txIx=0 txId=0xa1f3e513de23bfe2c1a2d8680905defb81c3196cbd39779d436358fe8591abe9 @ 1520414882 Wed, 07 Mar 2018 09:28:02 UTC
+undefined
+> 
+RESULT: sendContribution1_2Tx status=0x0 Failure gas=400000 gasUsed=27587 costETH=0.000082761 costUSD=0.06991732041 @ ETH/USD=844.81 gasPrice=3 gwei block=3823 txIx=1 txId=0xf87e2b1d52cb5b195e309a91c51c48c4e47f153f426c1a0ea587e06d9f51c665 @ 1520414882 Wed, 07 Mar 2018 09:28:02 UTC
+undefined
+> 
+RESULT: crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+RESULT: crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+RESULT: crowdsale.paused=false
+RESULT: crowdsale.getBatchStartTimesLength=4
+RESULT: crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+RESULT: crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+RESULT: crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+RESULT: crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+RESULT: crowdsale.isFinalized=false
+RESULT: crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+RESULT: crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+RESULT: crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+RESULT: crowdsale.usdPerMEth=844810000 844.81
+RESULT: crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+RESULT: crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+RESULT: crowdsale.weiRaised=7.57666790165836e+21 7576.66790165836
+RESULT: crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+RESULT: TokenPurchase 0 #3823 {"amount":"1.0560125e+22","beneficiary":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98","value":"1000000000000000000"}
+undefined
+> 
+RESULT: tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=400010560.125
+RESULT: token.mintingFinished=false
+RESULT: token.paused=true
+RESULT: Mint 0 #3823 {"amount":"1.0560125e+22","to":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98"}
+RESULT: Transfer 0 #3823: from=0x0000000000000000000000000000000000000000 to=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 value=10560.125
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+RESULT: Waiting until 'batchStartTime1' at 1520414905+0s=Wed, 07 Mar 2018 17:28:26 +08 now=Wed, 07 Mar 2018 17:28:05 +08
+RESULT: Waited until 'batchStartTime1' at at 1520414905+0s=Wed, 07 Mar 2018 17:28:26 +08 now=Wed, 07 Mar 2018 17:28:26 +08
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: Send Contribution #2 - During Batch 1 Period
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.019410792000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        3.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+RESULT: 15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+RESULT: 16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+RESULT: 17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -2.000571071000000000       21120.250000000000000000 Account #17 - Batch 0
+RESULT: 18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -1.000398619000000000       10560.125000000000000000 Account #18 - Batch 1
+RESULT: 19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649       -0.000082761000000000           0.000000000000000000 Account #19 - Batch 2
+RESULT: 20 0xb44b43d59b738b088b690ae276c1e979aba8268d        0.000000000000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+RESULT: 21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+RESULT: 22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+RESULT: 23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+RESULT: 24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+RESULT: 25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+RESULT: 26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+RESULT: 27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+RESULT: 28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+RESULT: 29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+RESULT: 30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+RESULT: 31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+RESULT: 32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+RESULT: 33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+RESULT: 34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             400031680.375000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Send Contribution #2 - During Batch 1 Period - ac17 1 ETH
+1
+> 
+RESULT: PASS Send Contribution #2 - During Batch 1 Period - ac18 1 ETH
+1
+> 
+RESULT: PASS Send Contribution #2 - During Batch 1 Period - ac19 1 ETH - Expecting failure - wrong batch
+1
+> 
+RESULT: sendContribution2_1Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3849 txIx=1 txId=0x8327e982918bcbe4f77d264aac61041abc839176c33cda0178e40689a32f5a48 @ 1520414908 Wed, 07 Mar 2018 09:28:28 UTC
+undefined
+> 
+RESULT: sendContribution2_2Tx status=0x1 Success gas=400000 gasUsed=105286 costETH=0.000315858 costUSD=0.26683999698 @ ETH/USD=844.81 gasPrice=3 gwei block=3849 txIx=0 txId=0xf14722791db732389d655e052bd137adc5685a3a4e94d2bd0c088237b8eba9d5 @ 1520414908 Wed, 07 Mar 2018 09:28:28 UTC
+undefined
+> 
+RESULT: sendContribution2_3Tx status=0x0 Failure gas=400000 gasUsed=27587 costETH=0.000082761 costUSD=0.06991732041 @ ETH/USD=844.81 gasPrice=3 gwei block=3849 txIx=2 txId=0x5f1e74d83a14064d4c5214ac5475ad4742c20fd09c66b6434321b199bdfeae4e @ 1520414908 Wed, 07 Mar 2018 09:28:28 UTC
+undefined
+> 
+RESULT: crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+RESULT: crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+RESULT: crowdsale.paused=false
+RESULT: crowdsale.getBatchStartTimesLength=4
+RESULT: crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+RESULT: crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+RESULT: crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+RESULT: crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+RESULT: crowdsale.isFinalized=false
+RESULT: crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+RESULT: crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+RESULT: crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+RESULT: crowdsale.usdPerMEth=844810000 844.81
+RESULT: crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+RESULT: crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+RESULT: crowdsale.weiRaised=7.57866790165836e+21 7578.66790165836
+RESULT: crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+RESULT: TokenPurchase 0 #3849 {"amount":"1.0560125e+22","beneficiary":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f","value":"1000000000000000000"}
+RESULT: TokenPurchase 1 #3849 {"amount":"1.0560125e+22","beneficiary":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98","value":"1000000000000000000"}
+undefined
+> 
+RESULT: tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=400031680.375
+RESULT: token.mintingFinished=false
+RESULT: token.paused=true
+RESULT: Mint 0 #3849 {"amount":"1.0560125e+22","to":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f"}
+RESULT: Mint 1 #3849 {"amount":"1.0560125e+22","to":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98"}
+RESULT: Transfer 0 #3849: from=0x0000000000000000000000000000000000000000 to=0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f value=10560.125
+RESULT: Transfer 1 #3849: from=0x0000000000000000000000000000000000000000 to=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 value=10560.125
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+RESULT: Waiting until 'batchStartTime2' at 1520414935+0s=Wed, 07 Mar 2018 17:28:56 +08 now=Wed, 07 Mar 2018 17:28:32 +08
+RESULT: Waited until 'batchStartTime2' at at 1520414935+0s=Wed, 07 Mar 2018 17:28:56 +08 now=Wed, 07 Mar 2018 17:28:56 +08
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: Send Contribution #3 - During Batch 2 Period
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.020229837000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0        6.000000000000000000           0.000000000000000000 Account #9 - Ag Tech
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+RESULT: 15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+RESULT: 16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+RESULT: 17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -3.000781284000000000       31680.375000000000000000 Account #17 - Batch 0
+RESULT: 18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -2.000608832000000000       21120.250000000000000000 Account #18 - Batch 1
+RESULT: 19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649       -1.000398619000000000       10560.125000000000000000 Account #19 - Batch 2
+RESULT: 20 0xb44b43d59b738b088b690ae276c1e979aba8268d       -0.000082761000000000           0.000000000000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+RESULT: 21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8        0.000000000000000000           0.000000000000000000 Account #21 - Batch 1 -> 2
+RESULT: 22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+RESULT: 23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+RESULT: 24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+RESULT: 25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+RESULT: 26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+RESULT: 27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+RESULT: 28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+RESULT: 29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+RESULT: 30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+RESULT: 31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+RESULT: 32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+RESULT: 33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+RESULT: 34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             400063360.750000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Send Contribution #3 - During Batch 2 Period - ac17 1 ETH
+1
+> 
+RESULT: PASS Send Contribution #3 - During Batch 2 Period - ac18 1 ETH
+1
+> 
+RESULT: PASS Send Contribution #3 - During Batch 2 Period - ac19 1 ETH
+1
+> 
+RESULT: PASS Send Contribution #3 - During Batch 2 Period - ac20 1 ETH - Expecting failure - wrong batch
+1
+> 
+RESULT: sendContribution3_1Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3879 txIx=0 txId=0xd1a15f09b1759a56dda92ea7df8eb87872821283da8b894643d97bc72085421b @ 1520414938 Wed, 07 Mar 2018 09:28:58 UTC
+undefined
+> 
+RESULT: sendContribution3_2Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3879 txIx=3 txId=0xb669af5cb3afd7de098960149547bdf99a790484d9d28adbd8433e372e5bc039 @ 1520414938 Wed, 07 Mar 2018 09:28:58 UTC
+undefined
+> 
+RESULT: sendContribution3_3Tx status=0x1 Success gas=400000 gasUsed=105286 costETH=0.000315858 costUSD=0.26683999698 @ ETH/USD=844.81 gasPrice=3 gwei block=3879 txIx=2 txId=0x5c0df5c20905746101f5990dd21910ae94a5450ac40c50d5ff276edd1c72487a @ 1520414938 Wed, 07 Mar 2018 09:28:58 UTC
+undefined
+> 
+RESULT: sendContribution3_4Tx status=0x0 Failure gas=400000 gasUsed=27587 costETH=0.000082761 costUSD=0.06991732041 @ ETH/USD=844.81 gasPrice=3 gwei block=3879 txIx=1 txId=0x9d234e5c0c04399f275e918fa418c4c98ee30d2ac1de04745f3b30cc347c449e @ 1520414938 Wed, 07 Mar 2018 09:28:58 UTC
+undefined
+> 
+RESULT: crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+RESULT: crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+RESULT: crowdsale.paused=false
+RESULT: crowdsale.getBatchStartTimesLength=4
+RESULT: crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+RESULT: crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+RESULT: crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+RESULT: crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+RESULT: crowdsale.isFinalized=false
+RESULT: crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+RESULT: crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+RESULT: crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+RESULT: crowdsale.usdPerMEth=844810000 844.81
+RESULT: crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+RESULT: crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+RESULT: crowdsale.weiRaised=7.58166790165836e+21 7581.66790165836
+RESULT: crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+RESULT: TokenPurchase 0 #3879 {"amount":"1.0560125e+22","beneficiary":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98","value":"1000000000000000000"}
+RESULT: TokenPurchase 1 #3879 {"amount":"1.0560125e+22","beneficiary":"0xb33b7ecf5e47be3981c74d989d3af8b665b4b649","value":"1000000000000000000"}
+RESULT: TokenPurchase 2 #3879 {"amount":"1.0560125e+22","beneficiary":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f","value":"1000000000000000000"}
+undefined
+> 
+RESULT: tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=400063360.75
+RESULT: token.mintingFinished=false
+RESULT: token.paused=true
+RESULT: Mint 0 #3879 {"amount":"1.0560125e+22","to":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98"}
+RESULT: Mint 1 #3879 {"amount":"1.0560125e+22","to":"0xb33b7ecf5e47be3981c74d989d3af8b665b4b649"}
+RESULT: Mint 2 #3879 {"amount":"1.0560125e+22","to":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f"}
+RESULT: Transfer 0 #3879: from=0x0000000000000000000000000000000000000000 to=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 value=10560.125
+RESULT: Transfer 1 #3879: from=0x0000000000000000000000000000000000000000 to=0xb33b7ecf5e47be3981c74d989d3af8b665b4b649 value=10560.125
+RESULT: Transfer 2 #3879: from=0x0000000000000000000000000000000000000000 to=0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f value=10560.125
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+RESULT: Waiting until 'batchStartTime3' at 1520414965+0s=Wed, 07 Mar 2018 17:29:26 +08 now=Wed, 07 Mar 2018 17:29:01 +08
+RESULT: Waited until 'batchStartTime3' at at 1520414965+0s=Wed, 07 Mar 2018 17:29:26 +08 now=Wed, 07 Mar 2018 17:29:26 +08
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: Send Contribution #4 - During Batch 3 Period
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021492192000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018358341000000000           0.000000000000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0     9469.584877000000000000           0.000000000000000000 Account #9 - Ag Tech
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+RESULT: 15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+RESULT: 16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+RESULT: 17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -4.000991497000000000       42240.500000000000000000 Account #17 - Batch 0
+RESULT: 18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -3.000819045000000000       31680.375000000000000000 Account #18 - Batch 1
+RESULT: 19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649       -2.000608832000000000       21120.250000000000000000 Account #19 - Batch 2
+RESULT: 20 0xb44b43d59b738b088b690ae276c1e979aba8268d    -9459.585275619000000000    99894398.749229625000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+RESULT: 21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8       -1.000315858000000000       10560.125000000000000000 Account #21 - Batch 1 -> 2
+RESULT: 22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+RESULT: 23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+RESULT: 24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+RESULT: 25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+RESULT: 26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+RESULT: 27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+RESULT: 28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+RESULT: 29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+RESULT: 30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+RESULT: 31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+RESULT: 32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+RESULT: 33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+RESULT: 34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             499999999.999229625000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Send Contribution #4 - During Batch 3 Period - ac17 1 ETH
+1
+> 
+RESULT: PASS Send Contribution #4 - During Batch 3 Period - ac18 1 ETH
+1
+> 
+RESULT: PASS Send Contribution #4 - During Batch 3 Period - ac19 1 ETH
+1
+> 
+RESULT: PASS Send Contribution #4 - During Batch 3 Period - ac20 9,459.5848770 ETH
+1
+> 
+RESULT: PASS Send Contribution #4 - During Batch 3 Period - ac21 1 ETH - Expecting failure - wrong batch
+1
+> 
+RESULT: sendContribution4_1Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=1 txId=0x591cc8c44e20e3fe795bf284d5dbafbeaea369c4dd33a3e087bdf1dc82960863 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+undefined
+> 
+RESULT: sendContribution4_2Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=0 txId=0x0c0d9292296b12910399938f51b4589e192b36c0e612c5a04e86e4eeff8586d6 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+undefined
+> 
+RESULT: sendContribution4_3Tx status=0x1 Success gas=400000 gasUsed=70071 costETH=0.000210213 costUSD=0.17759004453 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=4 txId=0x9046bfa4fb6b9a49918f6652984dec1ecd5f276812c9dd1ef6ea5773ee0e7493 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+undefined
+> 
+RESULT: sendContribution4_4Tx status=0x1 Success gas=400000 gasUsed=105286 costETH=0.000315858 costUSD=0.26683999698 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=3 txId=0xff4bc46bfe245b4d1739e2ad3017810b921a37c04a4e6897859a86bf189b8839 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+undefined
+> 
+RESULT: sendContribution4_5Tx status=0x1 Success gas=400000 gasUsed=105286 costETH=0.000315858 costUSD=0.26683999698 @ ETH/USD=844.81 gasPrice=3 gwei block=3909 txIx=2 txId=0x2c027a57d8f503226f54dbbffbca507ecb26d25d22f326b92bd8aaa591d0b2e0 @ 1520414968 Wed, 07 Mar 2018 09:29:28 UTC
+undefined
+> 
+RESULT: crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+RESULT: crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+RESULT: crowdsale.paused=false
+RESULT: crowdsale.getBatchStartTimesLength=4
+RESULT: crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+RESULT: crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+RESULT: crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+RESULT: crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+RESULT: crowdsale.isFinalized=false
+RESULT: crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+RESULT: crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+RESULT: crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+RESULT: crowdsale.usdPerMEth=844810000 844.81
+RESULT: crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+RESULT: crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+RESULT: crowdsale.weiRaised=1.704525277865836e+22 17045.25277865836
+RESULT: crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+RESULT: TokenPurchase 0 #3909 {"amount":"1.0560125e+22","beneficiary":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f","value":"1000000000000000000"}
+RESULT: TokenPurchase 1 #3909 {"amount":"1.0560125e+22","beneficiary":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98","value":"1000000000000000000"}
+RESULT: TokenPurchase 2 #3909 {"amount":"1.0560125e+22","beneficiary":"0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8","value":"1000000000000000000"}
+RESULT: TokenPurchase 3 #3909 {"amount":"9.9894398749229625e+25","beneficiary":"0xb44b43d59b738b088b690ae276c1e979aba8268d","value":"9.459584877e+21"}
+RESULT: TokenPurchase 4 #3909 {"amount":"1.0560125e+22","beneficiary":"0xb33b7ecf5e47be3981c74d989d3af8b665b4b649","value":"1000000000000000000"}
+undefined
+> 
+RESULT: tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: token.owner=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=499999999.999229625
+RESULT: token.mintingFinished=false
+RESULT: token.paused=true
+RESULT: Mint 0 #3909 {"amount":"1.0560125e+22","to":"0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f"}
+RESULT: Mint 1 #3909 {"amount":"1.0560125e+22","to":"0xb11be1d4ef8e94d01cb2695092a79d139a8dad98"}
+RESULT: Mint 2 #3909 {"amount":"1.0560125e+22","to":"0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8"}
+RESULT: Mint 3 #3909 {"amount":"9.9894398749229625e+25","to":"0xb44b43d59b738b088b690ae276c1e979aba8268d"}
+RESULT: Mint 4 #3909 {"amount":"1.0560125e+22","to":"0xb33b7ecf5e47be3981c74d989d3af8b665b4b649"}
+RESULT: Transfer 0 #3909: from=0x0000000000000000000000000000000000000000 to=0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f value=10560.125
+RESULT: Transfer 1 #3909: from=0x0000000000000000000000000000000000000000 to=0xb11be1d4ef8e94d01cb2695092a79d139a8dad98 value=10560.125
+RESULT: Transfer 2 #3909: from=0x0000000000000000000000000000000000000000 to=0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8 value=10560.125
+RESULT: Transfer 3 #3909: from=0x0000000000000000000000000000000000000000 to=0xb44b43d59b738b088b690ae276c1e979aba8268d value=99894398.749229625
+RESULT: Transfer 4 #3909: from=0x0000000000000000000000000000000000000000 to=0xb33b7ecf5e47be3981c74d989d3af8b665b4b649 value=10560.125
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
+RESULT: Waiting until 'endTime' at 1520414995+0s=Wed, 07 Mar 2018 17:29:56 +08 now=Wed, 07 Mar 2018 17:29:30 +08
+RESULT: Waited until 'endTime' at at 1520414995+0s=Wed, 07 Mar 2018 17:29:56 +08 now=Wed, 07 Mar 2018 17:29:56 +08
+RESULT: 
+undefined
+> 
+> 
+> 
+undefined
+> 
+undefined
+> 
+undefined
+> 
+RESULT: Finalise
+undefined
+> 
+undefined
+> 
+... 
+undefined
+> 
+RESULT:  # Account                                             EtherBalanceChange                          Token Name
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:  0 0xa00af22d07c87d96eeeb0ed583f8f6ac7812827e        0.021751731000000000           0.000000000000000000 Account #0 - Miner
+RESULT:  1 0xa11aae29840fbb5c86e6fd4cf809eba183aef433       -0.018617880000000000           0.000770375000000000 Account #1 - Contract Owner
+RESULT:  2 0xa22ab8a9d641ce77e06d98b7d7065d324d3d6976        0.000000000000000000           0.000000000000000000 Account #2 - Wallet
+RESULT:  3 0xa33a6c312d9ad0e0f2e95541beed0cc081621fd0        0.000000000000000000           0.000000000000000000 Account #3
+RESULT:  4 0xa44a08d3f6933c69212114bb66e2df1813651844        0.000000000000000000           0.000000000000000000 Account #4
+RESULT:  5 0xa55a151eb00fded1634d27d1127b4be4627079ea        0.000000000000000000           0.000000000000000000 Account #5
+RESULT:  6 0xa66a85ede0cbe03694aa9d9de0bb19c99ff55bd9        0.000000000000000000           0.000000000000000000 Account #6
+RESULT:  7 0xa77a2b9d4b1c010a22a7c565dc418cef683dbcec        0.000000000000000000           0.000000000000000000 Account #7
+RESULT:  8 0xa88a05d2b88283ce84c8325760b72a64591279a2        0.000000000000000000           0.000000000000000000 Account #8
+RESULT:  9 0xa99a0ae3354c06b1459fd441a32a3f71005d7da0     9469.584877000000000000           0.000000000000000000 Account #9 - Ag Tech
+RESULT: 10 0xaaaa9de1e6c564446ebca0fd102d8bd92093c756        0.000000000000000000    50000000.000000000000000000 Account #10 - Founding Team
+RESULT: 11 0xabba43e7594e3b76afb157989e93c6621497fd4b        0.000000000000000000   100000000.000000000000000000 Account #11 - Early Supporters
+RESULT: 12 0xacca534c9f62ab495bd986e002ddf0f054caae4f        0.000000000000000000   150000000.000000000000000000 Account #12 - Treasury
+RESULT: 13 0xadda9b762a00ff12711113bfdc36958b73d7f915        0.000000000000000000   100000000.000000000000000000 Account #13 - Presale Group
+RESULT: 14 0xaeea63b5479b50f79583ec49dacdcf86ddeff392        0.000000000000000000           0.000000000000000000 Account #14 - Presale 1
+RESULT: 15 0xaffa4d3a80add8ce4018540e056dacb649589394        0.000000000000000000           0.000000000000000000 Account #15 - Presale 2
+RESULT: 16 0xb00bfde102270687324f9205b693859df64f8923        0.000000000000000000           0.000000000000000000 Account #16 - Presale 3
+RESULT: 17 0xb11be1d4ef8e94d01cb2695092a79d139a8dad98       -4.000991497000000000       42240.500000000000000000 Account #17 - Batch 0
+RESULT: 18 0xb22be2d9eef0d7e260cf96a64feea0b95ed3e74f       -3.000819045000000000       31680.375000000000000000 Account #18 - Batch 1
+RESULT: 19 0xb33b7ecf5e47be3981c74d989d3af8b665b4b649       -2.000608832000000000       21120.250000000000000000 Account #19 - Batch 2
+RESULT: 20 0xb44b43d59b738b088b690ae276c1e979aba8268d    -9459.585275619000000000    99894398.749229625000000000 Account #20 - Batch 3 - approved for 20,000 ETH
+RESULT: 21 0xb55b57d113b45481e31aaf03d6f4e5ad4ef325f8       -1.000315858000000000       10560.125000000000000000 Account #21 - Batch 1 -> 2
+RESULT: 22 0xb66bcb4e473de80e2c8a47ced10c22c705a5e602        0.000000000000000000           0.000000000000000000 Account #22 - Batch 2 -> 3
+RESULT: 23 0xb77bbbaa7c1649547ae61de4b80b91568c28351a        0.000000000000000000           0.000000000000000000 Account #23 - Batch 2
+RESULT: 24 0xb88b728490b417e29b0784db30535db343830dba        0.000000000000000000           0.000000000000000000 Account #24 - Batch 2
+RESULT: 25 0xb99b3d1f72edb05a0321db58eddcf83fd73c4ade        0.000000000000000000           0.000000000000000000 Account #25 - Batch 2
+RESULT: 26 0xbaab56da883edbe5314b8005be410022c510ccae        0.000000000000000000           0.000000000000000000 Account #26 - Batch 2
+RESULT: 27 0xbbbb9809de0456ce0e0cd660e6e4ceabef3f521c        0.000000000000000000           0.000000000000000000 Account #27 - Batch 2
+RESULT: 28 0xbccb68dd0ac87ef290aef49870d155f076c87868        0.000000000000000000           0.000000000000000000 Account #28 - Batch 2
+RESULT: 29 0xbddb726ee06906e104db210e6d0506f2b062e477        0.000000000000000000           0.000000000000000000 Account #29 - Batch 2
+RESULT: 30 0xbeeb24ff18203658d0a1d4682ee3f36ad663ec87        0.000000000000000000           0.000000000000000000 Account #30 - Batch 2
+RESULT: 31 0xbffbd8f029ef0bd81cf754b53e8b3a5684f8b3ff        0.000000000000000000           0.000000000000000000 Account #31 - Batch 2
+RESULT: 32 0x4ad3ae36d5ca6ede210385b8357a566a5ecea272        0.000000000000000000           0.000000000000000000 Whitelist Contract
+RESULT: 33 0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63        0.000000000000000000           0.000000000000000000 Crowdsale Contract
+RESULT: 34 0x16dd50561b6ce76baab1fb7b0e824fe49852844a        0.000000000000000000           0.000000000000000000 Token 'SENC' 'Sentinel Chain Token'
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT:                                                                             500000000.000000000000000000 Total Token Balances
+RESULT: -- ------------------------------------------ --------------------------- ------------------------------ ---------------------------
+RESULT: 
+undefined
+> 
+RESULT: PASS Finalise
+1
+> 
+RESULT: finalise_1Tx status=0x1 Success gas=300000 gasUsed=86513 costETH=0.000259539 costUSD=0.21926114259 @ ETH/USD=844.81 gasPrice=3 gwei block=3939 txIx=0 txId=0xc05ebfdd8ff497ca67203748d765aa48798c2643fce78a4c5d21eda5f8d8d11d @ 1520414998 Wed, 07 Mar 2018 09:29:58 UTC
+undefined
+> 
+RESULT: crowdsaleContractAddress=0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63
+RESULT: crowdsale.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: crowdsale.TOKEN_FOUNDINGTEAM=5e+25 50000000 SENC
+RESULT: crowdsale.TOKEN_EARLYSUPPORTERS=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_PRESALE=1e+26 100000000 SENC
+RESULT: crowdsale.TOKEN_TREASURY=1.5e+26 150000000 SENC
+RESULT: crowdsale.paused=false
+RESULT: crowdsale.getBatchStartTimesLength=4
+RESULT: crowdsale.getBatchStartTime[0]=1520414875 Wed, 07 Mar 2018 09:27:55 UTC Wed, 07 Mar 2018 17:27:55 +08
+RESULT: crowdsale.getBatchStartTime[1]=1520414905 Wed, 07 Mar 2018 09:28:25 UTC Wed, 07 Mar 2018 17:28:25 +08
+RESULT: crowdsale.getBatchStartTime[2]=1520414935 Wed, 07 Mar 2018 09:28:55 UTC Wed, 07 Mar 2018 17:28:55 +08
+RESULT: crowdsale.getBatchStartTime[3]=1520414965 Wed, 07 Mar 2018 09:29:25 UTC Wed, 07 Mar 2018 17:29:25 +08
+RESULT: crowdsale.isFinalized=true
+RESULT: crowdsale.token=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: crowdsale.endTime=1520414995 Wed, 07 Mar 2018 09:29:55 UTC
+RESULT: crowdsale.startTime=1520414875 Wed, 07 Mar 2018 09:27:55 UTC
+RESULT: crowdsale.agTechWallet=0xa99a0ae3354c06b1459fd441a32a3f71005d7da0
+RESULT: crowdsale.usdPerMEth=844810000 844.81
+RESULT: crowdsale.publicSaleSencPerMEth=10560125000 10560.125
+RESULT: crowdsale.privateSaleSencPerMEth=13200156250 13200.15625
+RESULT: crowdsale.weiRaised=1.704525277865836e+22 17045.25277865836
+RESULT: crowdsale.whiteListed=0x4ad3ae36d5ca6ede210385b8357a566a5ecea272
+RESULT: Finalized 0 #3939 {}
+undefined
+> 
+RESULT: tokenContractAddress=0x16dd50561b6ce76baab1fb7b0e824fe49852844a
+RESULT: token.owner=0xa11aae29840fbb5c86e6fd4cf809eba183aef433
+RESULT: token.symbol=SENC
+RESULT: token.name=Sentinel Chain Token
+RESULT: token.decimals=18
+RESULT: token.totalSupply=500000000
+RESULT: token.mintingFinished=true
+RESULT: token.paused=true
+RESULT: OwnershipTransferred 0 #3939 {"newOwner":"0xa11aae29840fbb5c86e6fd4cf809eba183aef433","previousOwner":"0xb196e7fe3b147dc8421deb884a1fba46cd8e2b63"}
+RESULT: Mint 0 #3939 {"amount":"770375000000000","to":"0xa11aae29840fbb5c86e6fd4cf809eba183aef433"}
+RESULT: MintFinished 0 #3939 {}
+RESULT: Transfer 0 #3939: from=0x0000000000000000000000000000000000000000 to=0xa11aae29840fbb5c86e6fd4cf809eba183aef433 value=0.000770375
+undefined
+> 
+RESULT: 
+undefined
+> 
+> 
+> 
